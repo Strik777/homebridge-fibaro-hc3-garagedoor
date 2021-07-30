@@ -1,0 +1,64 @@
+{
+    "pluginAlias": "GarageDoor",
+    "pluginType": "accessory",
+    "singular": false,
+    "headerDisplay": "Optional content to display above the plugin config. Supports markdown.",
+    "footerDisplay": "Optional content to display below the plugin config. Supports markdown.",
+    "schema": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "title": "Name",
+          "type": "string",
+          "placeholder": "Garage door",
+          "required": true
+        },
+        "hc3IP": {
+            "title": "Home Center 3 IP Address / Hostname",
+            "type": "string",
+            "placeholder": "192.168.1.100 / hc3.local",
+            "format": "hostname",
+            "required": true
+          },
+        "hc3Token": {
+            "title": "Home Center 3 access token",
+            "type": "string",
+            "placeholder": "xxxxxxxxxxxxxxxxx",
+            "required": true
+          },
+        "switchId": {
+            "title": "Switch device id (HC3)",
+            "type": "string",
+            "placeholder": "21",
+            "required": true
+          },
+        "sensorId": {
+            "title": "Binary sensor device id (HC3)",
+            "type": "string",
+            "placeholder": "34",
+            "required": true
+          },
+        "openingDuration": {
+            "title": "Door opening time in sec.",
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 300
+          },
+        "closingDuration": {
+            "title": "Timeout",
+            "type": "integer",
+            "minimum": 15,
+            "maximum": 300
+          },
+        "poolingInterval": {
+            "title": "Door status refresh interval in sec.",
+            "type": "integer",
+            "default": 5,
+            "minimum": 1,
+            "maximum": 3000
+          }
+      }
+    },
+    "form": null,
+    "display": null
+  }

@@ -1,0 +1,11 @@
+{
+    "accessory": "GarageDoor",
+    "name": "Main garage door",
+    "hc3IP": "192.168.1.100",
+    "hc3Token": "xxxxxxxxxxxxxxxxx",
+    "switchId": "21",
+    "sensorId": "34",
+    "openingDuration": 25,
+    "closingDuration": 20,
+    "poolingInterval": 5
+}

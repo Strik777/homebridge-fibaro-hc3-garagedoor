@@ -1,0 +1,33 @@
+{
+    "bridge": {
+        "name": "Homebridge",
+        "username": "CC:22:3D:E3:CE:30",
+        "port": 51826,
+        "pin": "031-45-154"
+    },
+
+    "description": "This is an example configuration file. You can use this as a template",
+
+    "platforms": [
+        {
+            "name": "Config",
+            "port": 8581,
+            "platform": "config"
+        }
+    ],
+
+    "accessories": [
+        {
+            "accessory": "GarageDoor",
+            "name": "Main garage door",
+            "hc3IP": "192.168.1.100",
+            "hc3Token": "xxxxxxxxxxxxxxxxx",
+            "switchId": "21",
+            "sensorId": "34",
+            "openingDuration": 25,
+            "closingDuration": 20,
+            "poolingInterval": 5
+        }
+    ]
+}
+
